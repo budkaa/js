@@ -10,10 +10,22 @@
 <body>
     <div class="container">
         <div class="left">
-            <div class="center"></div>
+            <div class="center">
+                <p>first number:</p>
+                <input type="number" id="a">
+                <p>second number:</p>
+                <input type="number" id="b">
+                <button onclick="Print('+')">+</button>
+                <button onclick="Print('-')">-</button>
+                <button onclick="Print('*')">*</button>
+                <button onclick="Print('/')">/</button>
+            </div>
         </div>
         <div class="right">
-            <div class="center"></div>
+            <div class="center">
+                <p id="result">Result</p>
+                
+            </div>
         </div>
     </div>
     <script src="./calculate_hw.js"></script>

@@ -1,12 +1,19 @@
-function Print() {
-    document.getElementById("name").innerHTML =
-      document.getElementById("username").value;
-    document.getElementById("text").innerHTML =
-      document.getElementById("anytext").value;
-    Clear();
+function Print(params){
+  let a = parseInt(document.getElementById('a').value); 
+  let b = parseInt(document.getElementById('b').value);
+  
+
+  if(params == "+"){
+    document.getElementById('result').innerHTML = a + b
+  }
+  else if (params == "-"){
+    document.getElementById('result').innerHTML = a - b
+  }
+  else if (params == "*"){
+    document.getElementById('result').innerHTML = a * b
+  }
+  else if (params == "/"){
+    document.getElementById('result').innerHTML = a / b
   }
   
-  function Clear() {
-    document.getElementById("username").value = "";
-    document.getElementById("anytext").value = "";
-  }
+}
